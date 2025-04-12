@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    <h1>Enter the value</h1>
+    <hr>
+    <lable for="number">Enter the Value</lable>
+    <input type="number" id="number">
+    <lable for="start">Start</lable>
+    <input type="number" id="start">
+    <lable for="limit">End</lable>
+    <input type="number" id="limit">
+    <button id="genrate">Print </button>
+    <br><br>
+    <hr>
+    <div id="table">OUTPUT:</div>
+
+<script>
+    const numberinput= document.getElementById("number")
+    const startinput= document.getElementById("start")
+    const limitinput= document.getElementById("limit")
+    const genrateButton= document.getElementById("genrate")
+    const tableElement= document.getElementById("table")
+
+
+genrateButton.addEventListener('click', function()
+
+{ 
+    const number= parseInt(numberinput.value);
+    const start= parseInt(startinput.value);
+    const limit= parseInt(limitinput.value);
+    tableElement.innerHTML
+    
+    for (let i = start; i<=limit; i++);
+{
+    const row= document.createElement('table')
+    row.textContent= ${number} * ${i} = ${number*limit};
+
+}
+}
+)
+</script>
+</body>
+</html>
